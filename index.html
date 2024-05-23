@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORT CARD GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Addison's Report Card Generator 1.0</h1>
+        <label for="nameInput">Enter student name:</label>
+        <input type="text" id="nameInput" placeholder="Your Name">
+        <label for="genderInput">Select level:</label>
+        <select id="genderInput">
+            <option value="dynamo">Dynamo</option>
+            <option value="novice">Novice</option>
+            <option value="intermediate">Intermediate</option>
+        </select>
+        <label for="improvementInput">Enter something they could improve (e.g "cartwheels on balance"):</label>
+        <input type="text" id="improvementInput" placeholder="Something to improve">
+        <label for="complimentInput">Enter a compliment (e.g "keeping your feet glued when doing front rolls"):</label>
+        <input type="text" id="complimentInput" placeholder="A compliment">
+        <button id="generateBtn">Generate Report Card</button>
+
+        <div class="output-container">
+            <div id="storyOutput" class="story"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
